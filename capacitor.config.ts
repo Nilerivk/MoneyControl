@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.tuusuario.moneycontrol',
+  appId: "com.nilerivk.moneycontrol",
   appName: 'MoneyControl',
   webDir: 'dist'
 };

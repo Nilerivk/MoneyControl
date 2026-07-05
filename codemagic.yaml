@@ -5,15 +5,13 @@ workflows:
     instance_type: mac_mini_m2
 
     environment:
-      node: 22.17.1
+      node: 22
 
     scripts:
       - npm ci
       - npm run build
       - npx cap sync ios
-      - cd ios/App
-      - pod install
 
     artifacts:
-      - ios/App/build/**/*.ipa
-      - ios/App/build/**/*.app
+      - ios/**/*.ipa
+      - ios/**/*.app

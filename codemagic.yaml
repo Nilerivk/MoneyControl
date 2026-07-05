@@ -13,10 +13,9 @@ workflows:
       - npm run build
       - npx cap sync ios
 
-      # Compilar la app con Xcode
       - |
         xcodebuild \
-          -workspace ios/App/App.xcworkspace \
+          -project ios/App/App.xcodeproj \
           -scheme App \
           -configuration Release \
           -destination generic/platform=iOS \
